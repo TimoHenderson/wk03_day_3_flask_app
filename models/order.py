@@ -4,3 +4,6 @@ class Order:
         self.customer_name = customer_name
         self.item_purchased = item_purchased
         self.quantity = quantity
+
+    def formatted_string(self):
+        return f"{self.order_date}, {self.customer_name}, {self.item_purchased}, {self.quantity}"
