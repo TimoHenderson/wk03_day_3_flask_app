@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Orders</h2>
+<section class="orders">
+    {% for order in order_list %}
+
+
+    <a href="orders/{{order_list.index(order)}}">
+        <section class="single-order">
+            <h3>{{order.customer_name}}</h3>
+            <p>{{order.item_purchased}}</p>
+            <p>{{order.quantity}}</p>
+            <p class="date">{{order.date_as_string()}}</p>
+        </section>
+    </a>
+
+    {% endfor %}
+</section>
+
+{% endblock %}

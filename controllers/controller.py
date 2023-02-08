@@ -3,9 +3,14 @@ from app import app
 from models.order_list import order_list
 
 
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+
 @app.route("/orders")
 def orders():
-    return render_template("index.html", order_list=order_list)
+    return render_template("orders.html", order_list=order_list)
 
 
 @app.route("/orders/<number>")

@@ -1,8 +1,9 @@
 from models.order import Order
+import datetime as dt
 
 order_list = [
-    Order("12/03/22", "James Hetfield", "Microphone", 1),
-    Order("15/01/23", "Kirk Hammett", "Guitar", 5),
-    Order("07/06/22", "Robert Trujillo", "Bass Guitar", 1),
-    Order("23/02/21", "Lars Ulrich", "Drum Kit", 3),
+    Order(dt.datetime(2020, 5, 17), "James Hetfield", "Microphone", 1),
+    Order(dt.datetime(2020, 5, 19), "Kirk Hammett", "Guitar", 5),
+    Order(dt.datetime(2020, 5, 17), "Robert Trujillo", "Bass Guitar", 1),
+    Order(dt.datetime(2020, 5, 17), "Lars Ulrich", "Drum Kit", 3),
 ]
