@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Sabbra Caddabra</title>
 </head>
 
 <body>
     {% for order in order_list %}
     <!-- <p>{{ order.customer_name }}, {{ order.order_date }}, {{order.item_purchased}}, {{order.quantity}}</p> -->
-    <p>{{ order.formatted_string() }}</p>
+    <p> <a href="orders/{{ order_list.index(order) }}">{{ order.formatted_string() }}</a></p>
     {% endfor %}
 
 </body>
