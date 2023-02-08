@@ -45,6 +45,7 @@ nav>ul>li {
     justify-content: space-around;
     align-items: space-around;
     row-gap: 1rem;
+    padding-top: 1rem;
 }
 
 .single-order {
