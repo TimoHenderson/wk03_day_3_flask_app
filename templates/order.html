@@ -7,9 +7,15 @@
 <h2>Order</h2>
 <a class="breadcrumb" href="/orders">&lt back</a>
 <section class="full-order">
-    <h3>Customer: {{order.customer_name}}</h3>
-    <p>Item: {{order.item_purchased}}</p>
-    <p>Quantity: {{order.quantity}}</p>
-    <p>Ordered on: {{order.date_as_string()}}</p>
+
+    <div class="order-details">
+        <h3>Customer: {{order.customer_name}}</h3>
+        <p>Item: {{order.item_purchased}}</p>
+        <p>Quantity: {{order.quantity}}</p>
+        <p>Ordered on: {{order.date_as_string()}}</p>
+    </div>
+    <div class="order-img">
+        <img src="{{ url_for('static', filename='img/' + order.img_filename) }}" alt="{{ order.item_purchased }}">
+    </div>
 </section>
 {% endblock %}

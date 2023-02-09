@@ -5,9 +5,7 @@
 <a class="breadcrumb" href="/">&lt back</a>
 <section class="orders">
 
-
     {% for order in order_list %}
-
 
     <a href="orders/{{order_list.index(order)}}">
         <section class="single-order">
@@ -19,6 +17,7 @@
     </a>
 
     {% endfor %}
+
 </section>
 
 {% endblock %}

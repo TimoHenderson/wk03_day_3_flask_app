@@ -75,5 +75,17 @@ nav>ul>li {
     padding-left: 2rem;
     border-radius: 0.5rem;
     margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+}
+
+.order-details {
+    width: 100%;
+}
+
+
+.order-img>img {
+    width: 100%;
 }
